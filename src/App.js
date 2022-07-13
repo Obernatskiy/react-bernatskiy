@@ -1,10 +1,17 @@
-import './App.css';
+import React, {Component} from 'react';
 
-function App() {
-    return (
-        <div>
-        </div>
-    );
+import {Posts} from "./components/posts/Posts";
+import {Comments} from "./components/comments/Comments";
+
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <Posts/>
+                <Comments/>
+            </div>
+        );
+    }
 }
 
 export default App;
